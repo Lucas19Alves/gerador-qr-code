@@ -12,7 +12,7 @@ const generateQRCode = async () => {
   }
 
   try {
-    const response = await axios.post(`${import.meta.env.VITE_API_URL}/generate`, {
+    const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/generate`, {
       text: text.value,
       color: "#000000"
     });
