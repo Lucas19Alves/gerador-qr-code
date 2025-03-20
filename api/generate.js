@@ -1,7 +1,8 @@
-// filepath: c:\Users\Lucas\Documents\Projetos\gerador-qr-code\api\generate.js
 const QRCode = require("qrcode");
 
 module.exports = async (req, res) => {
+  console.log("Request received:", req.method, req.body);
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Método não permitido" });
   }
@@ -16,6 +17,7 @@ module.exports = async (req, res) => {
     const qrCodeDataURL = await QRCode.toDataURL(text, { color: { dark: color } });
     res.json({ qrCode: qrCodeDataURL });
   } catch (error) {
+    console.error("Erro ao gerar QR Code:", error);
     res.status(500).json({ error: "Erro ao gerar QR Code" });
   }
 };
