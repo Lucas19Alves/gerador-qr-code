@@ -14,8 +14,8 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "/generate"
+        "src": "/api/(.*)",
+        "dest": "/backend/server.js"
       },
       {
         "src": "/(.*)",
