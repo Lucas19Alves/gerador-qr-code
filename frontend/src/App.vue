@@ -50,10 +50,26 @@ const generateQRCode = async () => {
       </div>
     </div>
   </div>
+  
+  <footer class="footer bg-dark text-white text-center py-3 fixed-bottom">
+    <p class="mb-0">
+      Desenvolvido por 
+      <a href="https://github.com/Lucas19Alves" class="text-white text-decoration-underline">Lucas Alves</a> | 
+      <a href="https://portifolio-2-0.vercel.app/" class="text-white text-decoration-underline">Conheça outros projetos</a>
+    </p>
+  </footer>
 </template>
 
 <style>
 .vh-100 {
   height: 100vh;
+}
+
+.footer {
+  background-color: #212529;
+}
+
+.footer a:hover {
+  opacity: 0.8;
 }
 </style>
