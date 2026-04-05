@@ -1,17 +1,18 @@
 {
   "name": "backend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lucas Alves",
   "license": "ISC",
-  "description": "",
+  "description": "Backend para o gerador de QR Code",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "qrcode": "^1.4.4"
+    "express": "^4.18.2",
+    "qrcode": "^1.5.3"
   }
 }
