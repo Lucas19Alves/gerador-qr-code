@@ -2,7 +2,7 @@
   <footer class="footer py-4 text-center">
     <div class="container">
       <p class="mb-0 text-white-50">
-        Desenvolvido com ❤️ por 
+        Desenvolvido por 
         <a href="https://github.com/Lucas19Alves" class="text-white text-decoration-none fw-bold border-bottom border-primary border-2">Lucas Alves</a>
       </p>
       <div class="mt-2">

@@ -1,5 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Evita qualquer rolagem na página */
+}
+
 body {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  min-height: 100vh;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }

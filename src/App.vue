@@ -5,14 +5,19 @@ import "./assets/styles.css";
 </script>
 
 <template>
-  <main class="container py-5 min-vh-100 d-flex flex-column justify-content-center">
-    <QRCodeGenerator />
+  <main class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center py-2">
+    <div class="w-100 flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+      <QRCodeGenerator />
+    </div>
     <AppFooter />
   </main>
 </template>
 
 <style>
 /* Estilos globais adicionais se necessário */
+.h-100 {
+  height: 100vh !important;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease, transform 0.5s ease;
