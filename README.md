@@ -2,7 +2,9 @@
 
 Um gerador de QR Code simples, moderno e eficiente, desenvolvido com **Vue 3 (Vite)** e **Node.js**.
 
-Este projeto permite gerar QR Codes a partir de qualquer texto ou URL, com suporte para personalização de cores e implantação facilitada na Vercel.
+Gere QR Codes de **links, textos, WhatsApp, Wi-Fi e e-mail**, escolha cor e fundo e baixe em **PNG (1024 px) ou SVG**. Desde a versão 2.0 o código é gerado direto no navegador (biblioteca `qrcode`), sem ida ao servidor.
+
+**Online:** https://gerador-qr-code-plum.vercel.app · **Portfólio:** https://portfolio-lucasalves.vercel.app
 
 ## 📁 Estrutura do Projeto
 
@@ -44,16 +46,19 @@ Este projeto está configurado para implantação automática na Vercel. Basta c
 - [Vue.js 3](https://vuejs.org/) - Framework frontend
 - [Vite](https://vitejs.dev/) - Ferramenta de build ultra-rápida
 - [Node.js](https://nodejs.org/) - Ambiente de execução backend
-- [Express](https://expressjs.com/) - Framework web para Node.js
+- [Express](https://expressjs.com/) - Servidor local legado (`backend/`) e função `api/generate`, mantidos por compatibilidade
 - [node-qrcode](https://www.npmjs.com/package/qrcode) - Biblioteca para geração de QR Codes
 
 ## 🎨 Funcionalidades
 
-- ✅ Geração instantânea de QR Code
-- ✅ Suporte a links e textos
-- ✅ Personalização de cores (Dark/Light)
-- ✅ Design responsivo e moderno (Bootstrap 5)
-- ✅ Download direto da imagem gerada
+- ✅ Prévia instantânea enquanto você digita
+- ✅ Tipos: link, texto, WhatsApp (com mensagem), Wi-Fi (WPA/WEP/aberta) e e-mail
+- ✅ Cor do código e do fundo, com aviso de pouco contraste
+- ✅ Nível de correção de erro (L/M/Q/H)
+- ✅ Download em PNG ou SVG e cópia da imagem
+- ✅ Responsivo e acessível por teclado
+
+Testes: `npm test`
 
 ---
-Desenvolvido por [Lucas Alves](https://github.com/Lucas19Alves)
+Desenvolvido por [Lucas Alves](https://github.com/Lucas19Alves) · [Portfólio](https://portfolio-lucasalves.vercel.app/)
