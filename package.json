@@ -1,6 +1,6 @@
 {
   "name": "gerador-qr-code",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,10 +9,11 @@
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
     "build": "vite build",
     "preview": "vite preview",
-    "backend:install": "cd backend && npm install"
+    "backend:install": "cd backend && npm install",
+    "test": "node tests/payload.test.mjs"
   },
   "dependencies": {
-    "axios": "^1.4.0",
+    "qrcode": "^1.5.4",
     "vue": "^3.3.4"
   },
   "devDependencies": {

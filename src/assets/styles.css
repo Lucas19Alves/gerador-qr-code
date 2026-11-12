@@ -1,14 +1,24 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden; /* Evita qualquer rolagem na página */
+:root {
+  --ink: #17213a;
+  --paper: #eef1f6;
+  --card: #ffffff;
+  --muted: #5e6a82;
+  --line: #d6dce6;
+  --signal: #ffc93c;
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
 body {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
 }
