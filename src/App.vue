@@ -5,27 +5,17 @@ import "./assets/styles.css";
 </script>
 
 <template>
-  <main class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center py-2">
-    <div class="w-100 flex-grow-1 d-flex flex-column justify-content-center align-items-center">
-      <QRCodeGenerator />
-    </div>
-    <AppFooter />
+  <main class="page">
+    <QRCodeGenerator />
   </main>
+  <AppFooter />
 </template>
 
 <style>
-/* Estilos globais adicionais se necessário */
-.h-100 {
-  height: 100vh !important;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(20px);
+.page {
+  min-height: calc(100vh - 88px);
+  display: grid;
+  place-items: center;
+  padding: clamp(24px, 5vw, 64px) clamp(16px, 4vw, 40px);
 }
 </style>
